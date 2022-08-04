@@ -202,5 +202,9 @@ p {
 		padding: 15px;
 		overflow: hidden;
 	}
+
+	.home p  {
+	font-size: 0.8rem;
+}
 }
 
