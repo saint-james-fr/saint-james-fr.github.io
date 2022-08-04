@@ -46,7 +46,7 @@
 
 
 * {
-	box-sizing: box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
@@ -108,7 +108,7 @@ p {
 
 .section {
 	text-align: center;
-	padding: 10px;
+	overflow-x: hidden;
 }
 
 .worksite-header {
@@ -127,16 +127,16 @@ p {
 	align-items: center;
 	justify-content: space-evenly;
 	position: relative;
-	top: -40px;
+	top: -50px;
 }
 
 .mockup-desktop img, .mockup-desktop--only-mobile img {
-	max-height: 425px;
+	max-height: 420px;
 	max-width: 90vw;
 }
 
 .mockup-mobile img {
-	max-height: 275px;
+	max-height: 270px;
 	max-width: 90vw;
 }
 
