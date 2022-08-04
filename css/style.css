@@ -148,4 +148,8 @@ p {
 	.worksite-bottom-container {
 		position: static;
 	}
+
+	.worksite-header {
+		padding: 15px;
+	}
 }
