@@ -144,4 +144,8 @@ p {
 	.only-mobile {
 		display: flex;
 	}
+
+	.worksite-bottom-container {
+		position: static;
+	}
 }
