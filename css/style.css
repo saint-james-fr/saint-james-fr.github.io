@@ -124,4 +124,9 @@ p {
 	flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 750px) {
+	.home {
+		min-height: 100vh;
+	}
+}
 
