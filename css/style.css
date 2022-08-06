@@ -144,7 +144,7 @@ h1, h2, h3, p, li {
 	margin: 8vh auto 3vh auto;
 	color: white;
 	box-shadow: 10px 10px black;
-	overflow: hidden;
+	overflow-x: hidden;
 
 }
 
