@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/pressstart2p/v14/e3t4euO8T-267oIAQAu6jDQyK3nYivNm4I81PZQ.woff2) format('woff2');
+  src: url(fonts/e3t4euO8T-267oIAQAu6jDQyK3nYivNm4I81PZQ.woff2) format('woff2');
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/pressstart2p/v14/e3t4euO8T-267oIAQAu6jDQyK3nRivNm4I81PZQ.woff2) format('woff2');
+  src: url(fonts/e3t4euO8T-267oIAQAu6jDQyK3nRivNm4I81PZQ.woff2) format('woff2');
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek */
@@ -22,7 +22,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/pressstart2p/v14/e3t4euO8T-267oIAQAu6jDQyK3nWivNm4I81PZQ.woff2) format('woff2');
+  src: url(fonts/e3t4euO8T-267oIAQAu6jDQyK3nWivNm4I81PZQ.woff2) format('woff2');
   unicode-range: U+0370-03FF;
 }
 /* latin-ext */
@@ -31,7 +31,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/pressstart2p/v14/e3t4euO8T-267oIAQAu6jDQyK3nbivNm4I81PZQ.woff2) format('woff2');
+  src: url(fonts/e3t4euO8T-267oIAQAu6jDQyK3nbivNm4I81PZQ.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -50,7 +50,6 @@
 }
 
 :root {
-			--title-size: 1.6rem;
 			--font-family: 'Press Start 2P', cursive;			
 		}
 
@@ -66,40 +65,68 @@ body {
 	overflow: hidden;
 }
 
-h2, p, li {
+h1, h2, h3, p, li {
 	color: #ffe940;
-	line-height: 1.2rem
+	line-height: 1.2em
 }
 
 
-h1 {			
-	font-size: calc(1.8*var(--title-size));
+@media (min-width: 12.5em) {
+  h1 {
+    font-size: calc(1.7rem + ((1.5vw - 0.125rem) * 1.3565));
+    min-height: 0vw;
+  }
+}
+@media (min-width: 156.25em) {
+  h1 {
+    font-size: 3.75rem;
+  }
 }
 
-h2 {
-	font-size: var(--title-size);
+@media (min-width: 200px) {
+  h2 {
+    font-size: calc(1.1rem + ((1vw - 2px) * 0.4348));
+    min-height: 0vw;
+  }
+}
+@media (min-width: 2500px) {
+  h2 {
+    font-size: 30px;
+  }
 }
 
-.home h1 {
-	color: white;
-	line-height: 1.4;
+@media (min-width: 200px) {
+  h3 {
+    font-size: calc(1rem + ((1vw - 2px) * 0.3478));
+    min-height: 0vw;
+  }
+}
+@media (min-width: 2500px) {
+  h3 {
+    font-size: 26px;
+  }
 }
 
-.home h2 {
-	line-height: 1.4;
+@media (min-width: 200px) {
+  p, li {
+    font-size: calc(1rem + ((0.8vw - 2px) * 0.3478));
+    min-height: 0vw;
+  }
+}
+@media (min-width: 2500px) {
+  p, li {
+    font-size: 24px;
+  }
 }
 
 .home img {
-	height: 200px;
+	height: 35vh;
 	object-fit: contain;
 }
 
-h3 {
-	font-size: cacl(0.9 * var(--title-size));
-}
-
-p {
-	font-size: 15px;
+.home-header {
+	max-width: 90vw;
+	margin: auto;
 }
 
 #fullpage {
@@ -112,11 +139,17 @@ p {
 }
 
 .worksite-header {
-	padding: 30px;
+	padding: 1rem;
 	background: darkmagenta;
-	margin: 0 auto 10px auto;
+	margin: 8vh auto 3vh auto;
 	color: white;
 	box-shadow: 10px 10px black;
+	overflow: hidden;
+
+}
+
+.worksite-header h2 {
+color: white;
 }
 
 .worksite-bottom-container {
@@ -128,15 +161,29 @@ p {
 	justify-content: space-evenly;
 	position: relative;
 	top: -50px;
+	width: 100%;
+	padding: 15px;
 }
 
+.mockup-container {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	position: relative;
+	width: auto;
+}
+
+
 .mockup-desktop img, .mockup-desktop--only-mobile img {
-	max-height: 420px;
+	max-height: 60vh;
 	max-width: 90vw;
 }
 
 .mockup-mobile img {
-	max-height: 270px;
+	max-height: 40vh;
 	max-width: 90vw;
 }
 
@@ -151,8 +198,8 @@ p {
 
 .worksite-skills {
 	padding: 15px;
-	margin: 10px auto;
-	width: 400px;
+	margin: 10px 1vw;
+	width: 600px;
 	max-width: 90vw;
 }
 
@@ -197,14 +244,4 @@ p {
 	.worksite-bottom-container {
 		position: static;
 	}
-
-	.worksite-header {
-		padding: 15px;
-		overflow: hidden;
-	}
-
-	.home p  {
-	font-size: 0.8rem;
 }
-}
-
