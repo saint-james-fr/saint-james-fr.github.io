@@ -61,15 +61,10 @@ h1, h2, h3, h4, h5, h6, div, a, p, body {
 	color: inherit;
 }
 
-body {
-	overflow: hidden;
-}
-
 h1, h2, h3, p, li {
 	color: #ffe940;
 	line-height: 1.2em
 }
-
 
 @media (min-width: 12.5em) {
   h1 {
