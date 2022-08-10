@@ -73,17 +73,17 @@ h1, h2, h3, p, li {
   }
 
   h2 {
-    font-size: calc(1.1rem + ((1vw - 2px) * 0.4348));
+    font-size: calc(0.9rem + ((1vw - 2px) * 0.4348));
     min-height: 0vw;
   }
 
   h3 {
-    font-size: calc(1rem + ((1vw - 2px) * 0.3478));
+    font-size: calc(0.8rem + ((1vw - 2px) * 0.3478));
     min-height: 0vw;
   }
 
   p, li {
-    font-size: calc(1rem + ((0.8vw - 2px) * 0.3478));
+    font-size: calc(0.8rem + ((0.8vw - 2px) * 0.3478));
     min-height: 0vw;
   }
 }
