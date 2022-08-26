@@ -108,6 +108,7 @@ h1, h2, h3, p, li {
   }
 }
 
+
 .home img {
 	height: 35vh;
 	object-fit: contain;
@@ -218,7 +219,9 @@ color: white;
 	flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 750px) {
+
+
+@media only screen and (max-width: 1000px) {
 	.mockup-desktop {
 		display: none;
 	}
