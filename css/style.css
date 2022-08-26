@@ -219,6 +219,13 @@ color: white;
 	flex-wrap: wrap;
 }
 
+.mockup-desktop {
+	display: block;
+}
+
+.mockup-mobile {
+	display: block;
+}
 
 
 @media only screen and (max-width: 1000px) {
