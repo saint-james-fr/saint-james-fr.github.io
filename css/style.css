@@ -116,7 +116,13 @@ h1, h2, h3, p, li {
 
 .home-header {
 	max-width: 90vw;
-	margin: 30vh auto 0 auto;
+	margin: 24vh auto 0 auto;
+}
+
+@media screen and (max-width: 550px) {
+	.home-header {
+		margin-top: 20vh;
+	}
 }
 
 #fullpage {
