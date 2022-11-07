@@ -144,8 +144,26 @@ h1, h2, h3, p, li {
 	color: white;
 	box-shadow: 10px 10px black;
 	overflow-x: hidden;
-
 }
+
+.worksite-header h2 {
+		animation: clignote 0.4s infinite;
+}
+
+
+@keyframes clignote {
+	0% { 
+		opacity:1; 
+	}
+	40% {
+		opacity:0; 
+	}
+	100% { 
+		opacity:1; 
+	}
+}
+
+
 
 .worksite-header h2 {
 color: white;
