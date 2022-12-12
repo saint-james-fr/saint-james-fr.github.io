@@ -50,8 +50,8 @@
 }
 
 :root {
-			--font-family: 'Press Start 2P', cursive;		
-			--gray: gray;	
+			--font-family: 'Press Start 2P', cursive;
+			--gray: gray;
 			--blue : #21D4FD;
 			--lightblue : #0b145c;
 		}
@@ -109,20 +109,50 @@ h1, h2, h3, p, li {
 }
 
 
-.home img {
-	height: 35vh;
+.home-header > a > img {
+	height: 200px;
 	object-fit: contain;
 }
 
 .home-header {
 	max-width: 90vw;
-	margin: 24vh auto 0 auto;
+	margin: 5vh auto 0 auto;
+}
+
+
+.home-icons {
+  background-image: url('/img/icon-dev.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 30px auto;
+  width: 50vw;
+  background-color: rgba(255, 233, 66, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  height: 35vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-icons {
+    width: 60vw;
+  }
 }
 
 @media screen and (max-width: 550px) {
 	.home-header {
-		margin-top: 20vh;
+		margin-top: 5vh;
 	}
+
+  .home-header > a > img {
+	height: 160px;
+	object-fit: contain;
+  }
+
+  .home-icons {
+    width: 80vw;
+    margin: 30px auto;
+  }
 }
 
 #fullpage {
@@ -152,14 +182,14 @@ h1, h2, h3, p, li {
 
 
 @keyframes clignote {
-	0% { 
-		opacity:1; 
+	0% {
+		opacity:1;
 	}
 	40% {
-		opacity:0; 
+		opacity:0;
 	}
-	100% { 
-		opacity:1; 
+	100% {
+		opacity:1;
 	}
 }
 
