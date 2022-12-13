@@ -1,0 +1,36 @@
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 2s ease-out;
+}
+
+#spinner {
+  color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#spinner:after {
+  animation: changeContent 2s linear infinite;
+  display: block;
+  content: "loading";
+  font-size: 20px;
+}
+
+@keyframes changeContent {
+  10% { content: "lo"; }
+  20% { content: "loa"; }
+  30% { content: "load"; }
+  40% { content: "loadi"; }
+  50% { content: "loadin"; }
+  60% { content: "loading"; }
+  70% { content: "loading *"; }
+  80% { content: "loading **"; }
+  90% { content: "loading ***"; }
+  100% { content: "loading ****"; }
+}
