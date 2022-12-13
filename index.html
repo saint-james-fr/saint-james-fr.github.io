@@ -1,240 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="I'm learning web development and this is my portfolio. Come have a look at some websites I created for my clients!">
-	<title>Maxence Robinet - Portfolio - Webdesign</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/img/favicon/site.webmanifest">
-	<link rel="stylesheet" href="css/reset.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
-	<script src="js/jquery-3.6.0.js"></script>
-</head>
-<body>
-	<div id="fullpage">
-		<div class="section home">
-			<div class="home-header">
-				<h1>Maxence Robinet</h1>
-				<h2>Hey! I create websites!</h2>
-        <br>
-        <a href="https://www.linkedin.com/in/maxence-robinet-saint-james/" target="_blank"><h3>Learn more about me :)</h3></a>
-				<a href="mailto:%6d&#97;x%65n%63%65%72o%62&#105;net&#64;&#103;%6d&#97;&#105;l%2e&#99;om"><img src="img/computer.gif" alt="piskel art of a computer with flashing text">
-				<p>Contact me!</p></a>
-			</div>
-      <div class="home-icons">
+  <head>
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="I'm learning web development and this is my portfolio. Come have a look at some websites I created for my clients!"
+    />
+    <title>Maxence Robinet - Portfolio - Webdesign</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/favicon/site.webmanifest" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section home">
+        <div class="home-header">
+          <h1 class="animate__animated animate__backInLeft">Maxence Robinet</h1>
+          <h2>Hey! I create websites!</h2>
+          <br />
+          <a
+            href="https://www.linkedin.com/in/maxence-robinet-saint-james/"
+            target="_blank"
+            ><h3>Learn more about me :)</h3></a
+          >
+          <a
+            href="mailto:%6d&#97;x%65n%63%65%72o%62&#105;net&#64;&#103;%6d&#97;&#105;l%2e&#99;om"
+            ><img
+              src="img/computer.gif"
+              alt="piskel art of a computer with flashing text"
+            />
+            <p>Contact me!</p></a
+          >
+        </div>
+        <div class="home-icons"></div>
       </div>
-		</div>
-<!-- YouJam Mockupmobile -->
-<div class="section only-mobile">
-  <div class="worksite-bottom-container">
-    <div class="mockup-desktop--only-mobile">
-      <a href="https://www.youjam.co" target="_blank">
-        <img
-          src="img/mockup-youjam-desktop.png"
-          alt="YouJam Website screenshot showing the homepage" />
-      </a>
-    </div>
-  </div>
-</div>
-<!-- YouJam Worksite -->
-<div class="section">
-  <div class="section-header">
-    <a href="https://www.youjam.co" target="_blank">
-      <div class="worksite-header">
-        <h2>WWW.YOUJAM.CO</h2><br>
-        <p>YouJam<br>2022</p>
+      <!-- YouJam Mockupmobile -->
+      <div class="section only-mobile">
+        <div class="worksite-bottom-container">
+          <div class="mockup-desktop--only-mobile">
+            <a href="https://www.youjam.co" target="_blank">
+              <img
+                src="img/mockup-youjam-desktop.png"
+                alt="YouJam Website screenshot showing the homepage"
+              />
+            </a>
+          </div>
+        </div>
       </div>
-    </a>
-  </div>
-  <div class="worksite-bottom-container">
-    <div class="worksite-skills">
-      <ul class="list-skills">
-        <h3>FEATURES:</h3>
-        <br>
-        <li>Booking Jam Session Application for Musicians</li>
-        <li>Ruby on Rails with PostGreSQL DB</li>
-        <li>Authentification / Authorisation (Devise & Pundit)</li>
-        <li>API connection to Spotify </li>
-        <li>Chatrooms & Message feed</li>
-        <li>Geolocalisation</li>
-      </ul>
-      <br>
-      <ul class="list-skills">
-        <h3>CHALLENGES:</h3>
-        <br>
-        <li>Deployment on Heroku</li>
-        <li>First team project</li>
-        <li>Developped in 10 days with <a href="https://github.com/littleannie">Anne Ly</a>, <a href="https://github.com/Benjamin-Doberset">Benjamin Doberset</a>, <a href="https://github.com/Gauchille">Gaspard Fauchille</a> & <a href="https://github.com/pierreptl">Pierre Petel</a></li>
-      </ul>
+      <!-- YouJam Worksite -->
+      <div class="section">
+        <div class="section-header">
+          <a href="https://www.youjam.co" target="_blank">
+            <div class="worksite-header">
+              <h2>WWW.YOUJAM.CO</h2>
+              <br />
+              <p>YouJam<br />2022</p>
+            </div>
+          </a>
+        </div>
+        <div class="worksite-bottom-container">
+          <div class="worksite-skills">
+            <ul class="list-skills">
+              <h3>FEATURES:</h3>
+              <br />
+              <li>Booking Jam Session Application for Musicians</li>
+              <li>Ruby on Rails with PostGreSQL DB</li>
+              <li>Authentification / Authorisation (Devise & Pundit)</li>
+              <li>API connection to Spotify</li>
+              <li>Chatrooms & Message feed</li>
+              <li>Geolocalisation</li>
+            </ul>
+            <br />
+            <ul class="list-skills">
+              <h3>CHALLENGES:</h3>
+              <br />
+              <li>Deployment on Heroku</li>
+              <li>First team project</li>
+              <li>
+                Developped in 10 days with
+                <a href="https://github.com/littleannie">Anne Ly</a>,
+                <a href="https://github.com/Benjamin-Doberset"
+                  >Benjamin Doberset</a
+                >,
+                <a href="https://github.com/Gauchille">Gaspard Fauchille</a> &
+                <a href="https://github.com/pierreptl">Pierre Petel</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mockup-container">
+            <div class="mockup-desktop">
+              <a href="https://www.youjam.co" target="_blank"
+                ><img
+                  src="img/mockup-youjam-desktop.png"
+                  alt="Free Your Mind Website screenshot showing the homepage"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Free Your Mind Agency Mockupmobile -->
+      <div class="section only-mobile">
+        <div class="worksite-bottom-container">
+          <div class="mockup-desktop--only-mobile">
+            <a href="https://www.freeyourmind.agency" target="_blank"
+              ><img
+                src="img/mockup-freeyourmind-desktop.png"
+                alt="Free Your Mind Agency Website screenshot showing the homepage"
+            /></a>
+          </div>
+          <div class="mockup-mobile--only-mobile">
+            <a href="https://www.freeyourmind.agency" target="_blank"
+              ><img
+                src="img/mockup-freeyourmind-mobile.png"
+                alt="Free Your Mind Agency Website screenshot showing the homepage"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- Free Your Mind Agency Worksite -->
+      <div class="section">
+        <div class="section-header">
+          <a href="https://www.freeyourmind.agency" target="_blank">
+            <div class="worksite-header">
+              <h2>WWW.FREEYOURMIND.AGENCY</h2>
+              <br />
+              <p>Free Your Mind Agency<br />2022</p>
+            </div>
+          </a>
+        </div>
+        <div class="worksite-bottom-container">
+          <div class="worksite-skills">
+            <ul class="list-skills">
+              <h3>FEATURES:</h3>
+              <br />
+              <li>Customized Design</li>
+              <li>Customized Gallery</li>
+              <li>WordPress Integrated</li>
+            </ul>
+            <br />
+            <ul class="list-skills">
+              <h3>CHALLENGES:</h3>
+              <br />
+              <li>
+                Build a deisgn around the booking agency identity while keeping
+                it modern and fresh!
+              </li>
+            </ul>
+          </div>
+          <div class="mockup-container">
+            <div class="mockup-desktop">
+              <a href="https://www.freeyourmind.agency" target="_blank"
+                ><img
+                  src="img/mockup-freeyourmind-desktop.png"
+                  alt="Free Your Mind Website screenshot showing the homepage"
+              /></a>
+            </div>
+            <div class="mockup-mobile">
+              <a href="https://www.freeyourmind.agency" target="_blank"
+                ><img
+                  src="img/mockup-freeyourmind-mobile.png"
+                  alt="Free Your Mind Website screenshot showing the homepage"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inkswel Mockupmobile -->
+      <div class="section only-mobile">
+        <div class="worksite-bottom-container">
+          <div class="mockup-desktop--only-mobile">
+            <a href="https://www.inkswel.com" target="_blank"
+              ><img
+                src="img/mockup-inkswel-desktop.png"
+                alt="Inkswel Website screenshot showing the homepage"
+            /></a>
+          </div>
+          <div class="mockup-mobile--only-mobile">
+            <a href="https://www.inkswel.com" target="_blank"
+              ><img
+                src="img/mockup-inkswel-mobile.png"
+                alt="Inkswel Website screenshot showing the homepage"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- Inkswel Worksite -->
+      <div class="section">
+        <div class="section-header">
+          <a href="https://www.inkswel.com" target="_blank">
+            <div class="worksite-header">
+              <h2>WWW.INKSWEL.COM</h2>
+              <br />
+              <p>Inkswel<br />2022</p>
+            </div>
+          </a>
+        </div>
+        <div class="worksite-bottom-container">
+          <div class="worksite-skills">
+            <ul class="list-skills">
+              <h3>FEATURES:</h3>
+              <br />
+              <li>Wordpress Integrated</li>
+              <li>Customized Design</li>
+              <li>Customized Table with 180+ Refs Discography</li>
+              <li>Custom Audio Player</li>
+            </ul>
+            <br />
+            <ul class="list-skills">
+              <h3>CHALLENGES:</h3>
+              <br />
+              <li>Build a responsive table around a JS library</li>
+            </ul>
+          </div>
+          <div class="mockup-container">
+            <div class="mockup-desktop">
+              <a href="https://www.inkswel.com" target="_blank"
+                ><img
+                  src="img/mockup-inkswel-desktop.png"
+                  alt="Inkswel Website screenshot showing the homepage"
+              /></a>
+            </div>
+            <div class="mockup-mobile">
+              <a href="https://www.inkswel.com" target="_blank"
+                ><img
+                  src="img/mockup-inkswel-mobile.png"
+                  alt="Inkswel Website screenshot showing the homepage"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chuwanaga Mockupmobile -->
+      <div class="section only-mobile">
+        <div class="worksite-bottom-container">
+          <div class="mockup-desktop--only-mobile">
+            <a href="https://www.chuwanaga.com" target="_blank"
+              ><img
+                src="img/mockup-chuwanaga-desktop.png"
+                alt="Chuwanaga Website screenshot showing the homepage"
+            /></a>
+          </div>
+          <div class="mockup-mobile--only-mobile">
+            <a href="https://www.chuwanaga.com" target="_blank"
+              ><img
+                src="img/mockup-chuwanaga-mobile.png"
+                alt="Chuwanaga Website screenshot showing the homepage"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- Chuwanaga Worksite -->
+      <div class="section">
+        <div class="section-header">
+          <a href="https://www.chuwanaga.com" target="_blank">
+            <div class="worksite-header">
+              <h2>WWW.CHUWANAGA.COM</h2>
+              <br />
+              <p>Chuwanaga<br />2021</p>
+            </div>
+          </a>
+        </div>
+        <div class="worksite-bottom-container">
+          <div class="worksite-skills">
+            <ul class="list-skills">
+              <h3>FEATURES:</h3>
+              <br />
+              <li>Wordpress Integrated</li>
+              <li>Customized Design</li>
+            </ul>
+            <br />
+            <ul class="list-skills">
+              <h3>CHALLENGES:</h3>
+              <br />
+              <li>Build a fully design</li>
+            </ul>
+          </div>
+          <div class="mockup-container">
+            <div class="mockup-desktop">
+              <a href="https://www.chuwanaga.com" target="_blank"
+                ><img
+                  src="img/mockup-chuwanaga-desktop.png"
+                  alt="Chuwanaga Website screenshot showing the homepage"
+              /></a>
+            </div>
+            <div class="mockup-mobile">
+              <a href="https://www.chuwanaga.com" target="_blank"
+                ><img
+                  src="img/mockup-chuwanaga-mobile.png"
+                  alt="Chuwanaga Website screenshot showing the homepage"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Favorite Recordgins Mockupmobile -->
+      <div class="section only-mobile">
+        <div class="worksite-bottom-container">
+          <div class="mockup-desktop--only-mobile">
+            <a href="https://www.favoriterec.com" target="_blank"
+              ><img
+                src="img/mockup-favorite-desktop.png"
+                alt="Favorite Website screenshot showing the homepage"
+            /></a>
+          </div>
+          <div class="mockup-mobile--only-mobile">
+            <a href="https://www.favoriterec.com" target="_blank"
+              ><img
+                src="img/mockup-favorite-mobile.png"
+                alt="Favorite Website screenshot showing the homepage"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- Favorite Recordings Worksite -->
+      <div class="section">
+        <div class="section-header">
+          <a href="https://www.favoriterec.com" target="_blank">
+            <div class="worksite-header">
+              <h2>WWW.FAVORITEREC.COM</h2>
+              <br />
+              <p>Favorite Recordings<br />2020</p>
+            </div>
+          </a>
+        </div>
+        <div class="worksite-bottom-container">
+          <div class="worksite-skills">
+            <ul class="list-skills">
+              <h3>FEATURES:</h3>
+              <br />
+              <li>Wordpress Integration with Divi</li>
+              <li>Responsive Design</li>
+              <li>Security Updates</li>
+              <li>Artists section</li>
+            </ul>
+            <br />
+            <ul class="list-skills">
+              <h3>CHALLENGES:</h3>
+              <br />
+              <li>Building over an old Wordpress configuration</li>
+            </ul>
+          </div>
+          <div class="mockup-container">
+            <div class="mockup-desktop">
+              <a href="https://www.favoriterec.com" target="_blank"
+                ><img
+                  src="img/mockup-favorite-desktop.png"
+                  alt="Favorite Website screenshot showing the homepage"
+              /></a>
+            </div>
+            <div class="mockup-mobile">
+              <a href="https://www.favoriterec.com" target="_blank"
+                ><img
+                  src="img/mockup-favorite-mobile.png"
+                  alt="Favorite Website screenshot showing the homepage"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="mockup-container">
-      <div class="mockup-desktop"><a href="https://www.youjam.co" target="_blank"><img
-            src="img/mockup-youjam-desktop.png"
-            alt="Free Your Mind Website screenshot showing the homepage" /></a></div>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Free Your Mind Agency Mockupmobile -->
-		<div class="section only-mobile">
-			<div class="worksite-bottom-container">
-				<div class="mockup-desktop--only-mobile"><a href="https://www.freeyourmind.agency" target="_blank"><img src="img/mockup-freeyourmind-desktop.png" alt="Free Your Mind Agency Website screenshot showing the homepage"/></a></div>
-				<div class="mockup-mobile--only-mobile"><a href="https://www.freeyourmind.agency" target="_blank"><img src="img/mockup-freeyourmind-mobile.png" alt="Free Your Mind Agency Website screenshot showing the homepage"/></a></div>
-			</div>
-		</div>
-<!-- Free Your Mind Agency Worksite -->
-		<div class="section">
-			<div class="section-header">
-				<a href="https://www.freeyourmind.agency" target="_blank">
-					<div class="worksite-header">
-						<h2>WWW.FREEYOURMIND.AGENCY</h2><br><p>Free Your Mind Agency<br>2022</p>
-					</div>
-				</a>
-			</div>
-			<div class="worksite-bottom-container">
-				<div class="worksite-skills">
-					<ul class="list-skills">
-						<h3>FEATURES:</h3>
-						<br>
-						<li>Customized Design</li>
-						<li>Customized Gallery</li>
-						<li>WordPress Integrated</li>
-					</ul>
-					<br>
-					<ul class="list-skills">
-						<h3>CHALLENGES:</h3>
-						<br>
-						<li>Build a deisgn around the booking agency identity while keeping it modern and fresh!</li>
-					</ul>
-				</div>
-				<div class="mockup-container">
-					<div class="mockup-desktop"><a href="https://www.freeyourmind.agency" target="_blank"><img src="img/mockup-freeyourmind-desktop.png" alt="Free Your Mind Website screenshot showing the homepage"/></a></div>
-					<div class="mockup-mobile"><a href="https://www.freeyourmind.agency" target="_blank"><img src="img/mockup-freeyourmind-mobile.png" alt="Free Your Mind Website screenshot showing the homepage"/></a></div>
-				</div>
-			</div>
-		</div>
-
-<!-- Inkswel Mockupmobile -->
-		<div class="section only-mobile">
-			<div class="worksite-bottom-container">
-				<div class="mockup-desktop--only-mobile"><a href="https://www.inkswel.com" target="_blank"><img src="img/mockup-inkswel-desktop.png" alt="Inkswel Website screenshot showing the homepage"/></a></div>
-				<div class="mockup-mobile--only-mobile"><a href="https://www.inkswel.com" target="_blank"><img src="img/mockup-inkswel-mobile.png" alt="Inkswel Website screenshot showing the homepage"/></a></div>
-			</div>
-		</div>
-<!-- Inkswel Worksite -->
-		<div class="section">
-			<div class="section-header">
-				<a href="https://www.inkswel.com" target="_blank">
-					<div class="worksite-header">
-						<h2>WWW.INKSWEL.COM</h2><br><p>Inkswel<br>2022</p>
-					</div>
-				</a>
-			</div>
-			<div class="worksite-bottom-container">
-				<div class="worksite-skills">
-					<ul class="list-skills">
-						<h3>FEATURES:</h3>
-						<br>
-						<li>Wordpress Integrated</li>
-						<li>Customized Design</li>
-						<li>Customized Table with 180+ Refs Discography</li>
-						<li>Custom Audio Player</li>
-					</ul>
-					<br>
-					<ul class="list-skills">
-						<h3>CHALLENGES:</h3>
-						<br>
-						<li>Build a responsive table around a JS library</li>
-					</ul>
-				</div>
-				<div class="mockup-container">
-					<div class="mockup-desktop"><a href="https://www.inkswel.com" target="_blank"><img src="img/mockup-inkswel-desktop.png" alt="Inkswel Website screenshot showing the homepage"/></a></div>
-					<div class="mockup-mobile"><a href="https://www.inkswel.com" target="_blank"><img src="img/mockup-inkswel-mobile.png" alt="Inkswel Website screenshot showing the homepage"/></a></div>
-				</div>
-			</div>
-		</div>
-
-<!-- Chuwanaga Mockupmobile -->
-		<div class="section only-mobile">
-			<div class="worksite-bottom-container">
-				<div class="mockup-desktop--only-mobile"><a href="https://www.chuwanaga.com" target="_blank"><img src="img/mockup-chuwanaga-desktop.png" alt="Chuwanaga Website screenshot showing the homepage"/></a></div>
-				<div class="mockup-mobile--only-mobile"><a href="https://www.chuwanaga.com" target="_blank"><img src="img/mockup-chuwanaga-mobile.png" alt="Chuwanaga Website screenshot showing the homepage"/></a></div>
-			</div>
-		</div>
-<!-- Chuwanaga Worksite -->
-		<div class="section">
-			<div class="section-header">
-				<a href="https://www.chuwanaga.com" target="_blank">
-					<div class="worksite-header">
-						<h2>WWW.CHUWANAGA.COM</h2><br><p>Chuwanaga<br>2021</p>
-					</div>
-				</a>
-			</div>
-			<div class="worksite-bottom-container">
-				<div class="worksite-skills">
-					<ul class="list-skills">
-						<h3>FEATURES:</h3>
-						<br>
-						<li>Wordpress Integrated</li>
-						<li>Customized Design</li>
-					</ul>
-					<br>
-					<ul class="list-skills">
-						<h3>CHALLENGES:</h3>
-						<br>
-						<li>Build a fully design</li>
-					</ul>
-				</div>
-				<div class="mockup-container">
-					<div class="mockup-desktop"><a href="https://www.chuwanaga.com" target="_blank"><img src="img/mockup-chuwanaga-desktop.png" alt="Chuwanaga Website screenshot showing the homepage"/></a></div>
-					<div class="mockup-mobile"><a href="https://www.chuwanaga.com" target="_blank"><img src="img/mockup-chuwanaga-mobile.png" alt="Chuwanaga Website screenshot showing the homepage"/></a></div>
-				</div>
-			</div>
-		</div>
-<!-- Favorite Recordgins Mockupmobile -->
-		<div class="section only-mobile">
-			<div class="worksite-bottom-container">
-				<div class="mockup-desktop--only-mobile"><a href="https://www.favoriterec.com" target="_blank"><img src="img/mockup-favorite-desktop.png" alt="Favorite Website screenshot showing the homepage"/></a></div>
-				<div class="mockup-mobile--only-mobile"><a href="https://www.favoriterec.com" target="_blank"><img src="img/mockup-favorite-mobile.png" alt="Favorite Website screenshot showing the homepage"/></a></div>
-			</div>
-		</div>
-<!-- Favorite Recordings Worksite -->
-		<div class="section">
-			<div class="section-header">
-				<a href="https://www.favoriterec.com" target="_blank">
-					<div class="worksite-header">
-						<h2>WWW.FAVORITEREC.COM</h2><br><p>Favorite Recordings<br>2020</p>
-					</div>
-				</a>
-			</div>
-			<div class="worksite-bottom-container">
-				<div class="worksite-skills">
-					<ul class="list-skills">
-						<h3>FEATURES:</h3>
-						<br>
-						<li>Wordpress Integration with Divi</li>
-						<li>Responsive Design</li>
-						<li>Security Updates</li>
-						<li>Artists section</li>
-					</ul>
-					<br>
-					<ul class="list-skills">
-						<h3>CHALLENGES:</h3>
-						<br>
-						<li>Building over an old Wordpress configuration</li>
-					</ul>
-				</div>
-				<div class="mockup-container">
-					<div class="mockup-desktop"><a href="https://www.favoriterec.com" target="_blank"><img src="img/mockup-favorite-desktop.png" alt="Favorite Website screenshot showing the homepage"/></a></div>
-					<div class="mockup-mobile"><a href="https://www.favoriterec.com" target="_blank"><img src="img/mockup-favorite-mobile.png" alt="Favorite Website screenshot showing the homepage"/></a></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
+  </body>
 </html>
