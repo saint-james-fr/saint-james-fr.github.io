@@ -26,9 +26,35 @@ h1, h2, h3, p, li {
 	line-height: 1.2em
 }
 
+html {
+	/* background-image: linear-gradient(23deg, var(--blue) 0%, var(--darkblue) 100%); */
+  background-image: url('/img/mesh-gradient.png');
+  background-size: cover;
+  background-position:center;
+}
+
+body::-webkit-scrollbar-track-piece
+{
+   display:none;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+}
+
+
+
 @media (min-width: 12.5em) {
   h1 {
-    font-size: calc(1.7rem + ((1.5vw - 0.125rem) * 1.3565));
+    font-size: calc(1.2rem + ((1.5vw - 0.125rem) * 1.3565));
     min-height: 0vw;
   }
 
@@ -90,9 +116,9 @@ h1, h2, h3, p, li {
   height: 35vh;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 551px) {
   .home-icons {
-    width: 60vw;
+    width: min(50vw, 600px);
   }
 }
 
@@ -112,16 +138,13 @@ h1, h2, h3, p, li {
   }
 }
 
-#fullpage {
-	background-color: var(--blue);
-	background-image: linear-gradient(23deg, var(--blue) 0%, var(--darkblue) 100%);
-}
-
 .section {
 	text-align: center;
 	overflow-x: hidden;
-	min-height: 100vh;
+	min-height: auto;
 	height: auto;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .worksite-header {
@@ -171,6 +194,7 @@ color: white;
 
 .mockup-container {
 	display: flex;
+  flex: 1;
 	flex-direction: row;
 	margin: auto;
 	flex-wrap: wrap;
@@ -240,7 +264,7 @@ color: white;
 	display: block;
 }
 
-
+/*
 @media only screen and (max-width: 500px) {
 	.mockup-desktop {
 		display: none;
@@ -258,3 +282,4 @@ color: white;
 		position: static;
 	}
 }
+*/

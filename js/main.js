@@ -1,12 +1,17 @@
 document.onreadystatechange = function () {
+  let body = document.querySelector("body");
+  let fullpage = document.querySelector("#fullpage");
+  let spinner = document.querySelector("#spinner");
+
   if (document.readyState !== "complete") {
-    document.querySelector("body").style.backgroundColor = "#0b145c";
-    document.querySelector("#spinner").style.visibility = "visible";
+    body.style.overflow = "hidden";
+    spinner.style.visibility = "visible";
   } else {
-    document.querySelector("#spinner").style.display = "none";
-    document.querySelector("body").style.visibility = "visible";
-    document.querySelector("#fullpage").classList.add("visible");
-    document.querySelector("#fullpage").classList.remove("hidden");
+    body.style.overflow = "initial";
+    spinner.style.display = "none";
+    body.style.visibility = "visible";
+    fullpage.classList.add("visible");
+    fullpage.classList.remove("hidden");
   }
 };
 
